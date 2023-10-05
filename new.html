@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flexbox Layout</title>
+<link rel="shortcut icon" href="header.jpg">
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+
+}
+
+.container {
+display: flex;
+flex-direction: column;
+height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+  background-image: url(img/header.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:400px;
+  padding-bottom: 20px;
+background-color: #333;
+color: #fff;
+padding: 5px;
+text-align: center;
+}
+
+nav {
+background-color: #ccc;
+padding: 10px;
+display: flex;
+justify-content: space-between;
+}
+
+nav a {
+color: #333;
+text-decoration: none;
+padding: 5px 10px;
+}
+
+main {
+flex: 1;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+background-color: #eee;
+padding: 20px;
+}
+
+section {
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0,0,0,0.2);
+margin: 10px;
+flex-basis: 300px;
+flex-grow: 1;
+}
+
+section img {
+max-width: 100%;
+height: auto;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <div class="container">
+    
+    <div class="centered"> <h1>Zeedapp</h1> <p>Zeedapp is a SaaS & App Landing Startups Template</p><button class="btn">PURCHASE NOW</button></div>
+</div>
+</header>
+
+<nav>
+<a href="#"> <h align="center"> <h2> 10</h2> <h3>TOTAL PAGE</h3> </h> </a>
+<a href="#"> <h align="center"> <h2>6</h2> <h3>HOME PAGE</h3> </h></a>
+<a href="#"> <h align="center"> <h2>4</h2> <h3>BLOG PAGE</h3></h></a>
+</nav>
+
+<main>
+  
+    <section>
+      <div class="img">
+        <img src="img/index.jpg" alt="Images">
+      </div>
+      <p align="center"> HOME ONE/ BACKGROUND SLIDER</p>
+        </section>
+   
+      <section>
+        <div class="img">
+          <img src="img/index2.jpg" alt="Images">
+        </div>
+    <p align="center"> HOME TWO/ PARALAX SLIDER</p>
+    
+    </section>
+   
+    <section>
+      <div class="img">
+        <img src="img/index3.jpg" alt="Images">
+      </div>
+    <p align="center"> HOME THREE/ GRADIANT PARALAX</p>
+    </section>
+    
+   
+</main>
+
+<section>
+  <div style="text-align: center;"> <div style="text-align:center"> <p style="word-spacing: 5px;"> 
+      <p> <b >GREATE YOUR OWN WEBSITE TODAY!</b></p> 
+      <button class="btn">PURCHASE NOW</button>
+      </div>
+  </section>
+<footer>
+    
+  <p>&copy; 2023 Flexbox Website. All rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>
